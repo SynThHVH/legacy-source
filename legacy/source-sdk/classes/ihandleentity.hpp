@@ -1,0 +1,18 @@
+#pragma once
+//========= Copyright Valve Corporation, All rights reserved. ============//
+//
+// Purpose: 
+//
+// $NoKeywords: $
+//=============================================================================//
+
+class CBaseHandle;
+
+// An IHandleEntity-derived class can go into an entity list and use ehandles.
+class IHandleEntity
+{
+public:
+	virtual ~IHandleEntity( ) {}
+	virtual void SetRefEHandle( const CBaseHandle &handle ) = 0;
+	virtual const CBaseHandle& GetRefEHandle( ) const = 0;
+};

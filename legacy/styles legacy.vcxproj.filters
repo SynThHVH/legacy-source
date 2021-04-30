@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{afc13dd1-1024-4bda-ad46-1947a695d306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{cc5f128d-0d8c-4c79-9d71-236bb7ee8fc7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source-sdk\handling\interfaces.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hooking\detours\detours.cpp" />
+    <ClCompile Include="hooking\handling\hooks.cpp" />
+    <ClCompile Include="hooking\vmts\vmts.cpp" />
+    <ClCompile Include="utilities\netvar.cpp" />
+    <ClCompile Include="features\lagcomp\lagcomp.cpp" />
+    <ClCompile Include="source-sdk\valve\checksum_crc.cpp" />
+    <ClCompile Include="features\menu\menu.cpp" />
+    <ClCompile Include="utilities\drawmanager.cpp" />
+    <ClCompile Include="features\movement\movement.cpp" />
+    <ClCompile Include="utilities\globals.cpp" />
+    <ClCompile Include="features\legit\legitbacktrack.cpp" />
+    <ClCompile Include="features\autowall\autowall.cpp" />
+    <ClCompile Include="features\rage\aimbot.cpp" />
+    <ClCompile Include="features\rage\antiaim.cpp" />
+    <ClCompile Include="features\rage\enginepred.cpp" />
+    <ClCompile Include="source-sdk\valve\checksum_md5.cpp" />
+    <ClCompile Include="features\rage\fakelag.cpp" />
+    <ClCompile Include="hooking\events\event.cpp" />
+    <ClCompile Include="features\lagcomp\resolver.cpp" />
+    <ClCompile Include="features\visuals\esp.cpp" />
+    <ClCompile Include="hooking\netvars\handler\netvarhkmgr.cpp" />
+    <ClCompile Include="hooking\netvars\netvarhks.cpp" />
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source-sdk\handling\interfaces.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-sdk\interfaces\client.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-sdk\valve\common.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source-sdk\valve\recv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hooking\handling\hooks.hpp" />
+    <ClInclude Include="utilities\memory.hpp" />
+    <ClInclude Include="hooking\vmts\vmts.hpp" />
+    <ClInclude Include="hooking\detours\library\detours.hpp" />
+    <ClInclude Include="math\vector.hpp" />
+    <ClInclude Include="utilities\netvar.hpp" />
+    <ClInclude Include="utilities\fnv1a.hpp" />
+    <ClInclude Include="source-sdk\valve\cutlvector.hpp" />
+    <ClInclude Include="math\matrix.hpp" />
+    <ClInclude Include="features\lagcomp\lagcomp.hpp" />
+    <ClInclude Include="source-sdk\interfaces\icliententitylist.hpp" />
+    <ClInclude Include="source-sdk\classes\icliententity.hpp" />
+    <ClInclude Include="source-sdk\classes\iclientunknown.hpp" />
+    <ClInclude Include="source-sdk\classes\icollideable.hpp" />
+    <ClInclude Include="source-sdk\classes\ihandleentity.hpp" />
+    <ClInclude Include="source-sdk\classes\basehandle.hpp" />
+    <ClInclude Include="source-sdk\valve\const.hpp" />
+    <ClInclude Include="source-sdk\classes\cbaseentity.hpp" />
+    <ClInclude Include="source-sdk\classes\iclientrenderable.hpp" />
+    <ClInclude Include="source-sdk\classes\iclientnetworkable.hpp" />
+    <ClInclude Include="source-sdk\classes\iclientthinkable.hpp" />
+    <ClInclude Include="source-sdk\classes\usercmd.hpp" />
+    <ClInclude Include="source-sdk\valve\checksum_crc.hpp" />
+    <ClInclude Include="source-sdk\valve\color.h" />
+    <ClInclude Include="source-sdk\interfaces\isurfaceV30.hpp" />
+    <ClInclude Include="source-sdk\interfaces\iclientmode.hpp" />
+    <ClInclude Include="source-sdk\interfaces\ipanel.hpp" />
+    <ClInclude Include="utilities\drawmanager.hpp" />
+    <ClInclude Include="features\menu\menu.hpp" />
+    <ClInclude Include="source-sdk\interfaces\icvar.hpp" />
+    <ClInclude Include="source-sdk\classes\iappsystem.hpp" />
+    <ClInclude Include="source-sdk\valve\in_buttons.hpp" />
+    <ClInclude Include="source-sdk\interfaces\cdll_int.hpp" />
+    <ClInclude Include="source-sdk\classes\keyvalues.hpp" />
+    <ClInclude Include="source-sdk\classes\iconvar.hpp" />
+    <ClInclude Include="source-sdk\classes\convar.hpp" />
+    <ClInclude Include="features\movement\movement.hpp" />
+    <ClInclude Include="math\math.hpp" />
+    <ClInclude Include="source-sdk\interfaces\cglobalvarsbase.hpp" />
+    <ClInclude Include="source-sdk\interfaces\debugoverlay.hpp" />
+    <ClInclude Include="source-sdk\interfaces\surface.hpp" />
+    <ClInclude Include="source-sdk\interfaces\trace.hpp" />
+    <ClInclude Include="source-sdk\classes\cbasecombatweapon.hpp" />
+    <ClInclude Include="utilities\globals.hpp" />
+    <ClInclude Include="source-sdk\classes\client_class.hpp" />
+    <ClInclude Include="utilities\offsets.hpp" />
+    <ClInclude Include="features\legit\legit.hpp" />
+    <ClInclude Include="source-sdk\interfaces\igametypes.hpp" />
+    <ClInclude Include="source-sdk\interfaces\imaterialsystem.hpp" />
+    <ClInclude Include="source-sdk\classes\imaterial.hpp" />
+    <ClInclude Include="source-sdk\interfaces\ivmodelrender.hpp" />
+    <ClInclude Include="source-sdk\interfaces\ivmodelinfo.hpp" />
+    <ClInclude Include="features\autowall\autowall.hpp" />
+    <ClInclude Include="source-sdk\interfaces\vphysics_interfaceV30.hpp" />
+    <ClInclude Include="utilities\hitboxes.hpp" />
+    <ClInclude Include="source-sdk\interfaces\igamemovement.hpp" />
+    <ClInclude Include="source-sdk\interfaces\imovehelper.hpp" />
+    <ClInclude Include="source-sdk\interfaces\prediction.hpp" />
+    <ClInclude Include="features\rage\rage.hpp" />
+    <ClInclude Include="source-sdk\valve\checksum_md5.hpp" />
+    <ClInclude Include="source-sdk\interfaces\istudiorender.hpp" />
+    <ClInclude Include="source-sdk\interfaces\igameevent.hpp" />
+    <ClInclude Include="hooking\events\event.hpp" />
+    <ClInclude Include="source-sdk\interfaces\input.h" />
+    <ClInclude Include="source-sdk\classes\view_shared.h" />
+    <ClInclude Include="features\visuals\visuals.hpp" />
+    <ClInclude Include="source-sdk\interfaces\ienginesound.hpp" />
+    <ClInclude Include="features\lagcomp\resolver.hpp" />
+    <ClInclude Include="hooking\netvars\handler\netvarhkmgr.hpp" />
+    <ClInclude Include="hooking\netvars\netvarhks.hpp" />
+    <ClInclude Include="features\features.hpp" />
+    <ClInclude Include="utilities\include.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utilities\bytes.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="hooking\detours\library\detours.lib" />
+  </ItemGroup>
+</Project>
